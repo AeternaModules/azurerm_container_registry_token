@@ -15,7 +15,7 @@ EOT
     name                    = string
     resource_group_name     = string
     scope_map_id            = string
-    enabled                 = optional(bool, true)
+    enabled                 = optional(bool) # Default: true
   }))
 }
 
