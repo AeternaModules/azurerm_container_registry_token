@@ -1,3 +1,7 @@
+output "container_registry_tokens_id" {
+  description = "Map of id values across all container_registry_tokens, keyed the same as var.container_registry_tokens"
+  value       = { for k, v in azurerm_container_registry_token.container_registry_tokens : k => v.id }
+}
 output "container_registry_tokens_container_registry_name" {
   description = "Map of container_registry_name values across all container_registry_tokens, keyed the same as var.container_registry_tokens"
   value       = { for k, v in azurerm_container_registry_token.container_registry_tokens : k => v.container_registry_name }
