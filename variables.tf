@@ -15,7 +15,7 @@ EOT
     name                    = string
     resource_group_name     = string
     scope_map_id            = string
-    enabled                 = optional(bool) # Default: true
+    enabled                 = optional(bool)
   }))
   # --- Unconfirmed validation candidates, derived from azurerm_container_registry_token's provider source ---
   # Not auto-enabled: either a bespoke provider validator we can't safely translate,
